@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;900&display=swap');
+*{
+	font-family: 'Nunito', sans-serif;
+	margin:0; padding:0;
+	box-sizing: border-box;
+	outline:none; border:none;
+	text-decoration: none;
+	transition: all .2s linear;
+	text-transform:capitalize;
+
+
+}
+
+
+/* The animation code */
+@keyframes example {
+  0%   {background-color: #ff9f80;}
+  25%  {background-color: #ffff80;}
+  50%  {background-color: #bfff80;}
+  100% {background-color: #df80ff;}
+}
+
+@keyframes example1 {
+  0%   {background-color:red; left:0px; right:0px;}
+  25%  {background-color:yellow; left:200px; right:0px;}
+  50%  {background-color:blue; left:200px; right:200px;}
+  100% {background-color:red; left:0px; right:0px;}
+}
+
+html{
+
+	overflow-x: hidden;
+
+}
+
+body{
+	 animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+}
+
+h1{
+	position:absolute;
+  background-color:#ffff33 ;
+  animation-name: example1;
+  animation-duration: 4s;
+
+}
+
+h2{
+	font-size:
+}
+section{
+	background-color:#66CC66;
+	border:.3rem solid #444;
+	margin-right: 15rem;
+	margin-left: 15rem;
+	width: 50%;
+	height:50%;
+}
+
+button{
+	height: 5vh;
+	width: 18vh;
+}
+
+button:hover{
+	background-color: #bfff00;
+}
+
+label{
+	font-size:1.5rem;
+}
+
+label:hover{
+	color: #bfff00;
+}
+
+section .female{
+	font-size:1rem;
+}
+
+section .male{
+	font-size:1rem;
+}
+
+
+@media(max-width: 991px){
+	html{
+		font-size: 55%;
+	}
+}
+
+@media(max-width: 768px){
+	.product-preview .trial img{
+	height:20em;
+}
+}
+@media(max-width: 450px){
+	html{
+		font-size: 50%;
+	}
+}

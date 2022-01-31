@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+	<br>
+	<h1>Do You Know? </h1><br><br><br>
+    <h2>What does your name say about your personality?</h2><br>
+<section>
+	<div class="middlepart">
+	<div class="info"><br><br>
+		<label>Enter your name</label><br><br>
+		<input type="text" name="" id="nameid"><br><br>
+		</div>
+
+	<div class="image">
+	   <img src="welcome.gif" width="200" height="200" class="change" >
+    </div><br><br>
+</div>
+    <button class="female">Female</button><br><br>
+    <button class="male">Male</button><br><br>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('.female').click(function() {
+			const a = $('#nameid').val();
+			alert(a);
+			$('.change').attr('src', `https://joeschmoe.io/api/v1/female/${a}`);
+			const b = $('.change');
+			console.log(b);
+
+		});
+
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.male').click(function() {
+			const c = $('#nameid').val();
+			alert(c);
+			$('.change').attr('src', `https://joeschmoe.io/api/v1/male/${c}`);
+			const d = $('.change');
+			console.log(d);
+
+		});
+
+	});
+</script>
+</center>
+</body>
+</html>
+<htm
